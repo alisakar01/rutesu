@@ -1,0 +1,10 @@
+name = "rutesu"
+compatibility_date = "2026-06-11"
+compatibility_flags = [ "nodejs_compat" ]
+
+# Hono API'sinin ana giriş dosyasını tetikliyoruz
+main = "api/boot.ts" 
+
+# Vite'in derlediği ön yüz klasörünü Cloudflare'a gösteriyoruz
+[site]
+bucket = "./dist/public"
